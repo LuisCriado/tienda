@@ -22,7 +22,7 @@ export  function ChangeEmailForm() {
                 await userCtrl.updateMe(user.id, {email:formValue.email});
                 updateUser("email", formValue.email);
                 formik.handleReset();
-                console.log("formValue")
+                
                 
             } catch (error) {
                 console.error(error);

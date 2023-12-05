@@ -1,0 +1,55 @@
+.gridProductos {
+  
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    margin-top: 20px;
+  }
+  
+  .gidits {
+    width: calc(33.33% - 20px); // Resta el margen para asegurar que haya espacio entre los elementos
+    margin-bottom: 10px;
+    text-decoration: none;
+  
+    &:hover {
+      opacity: 0.7;
+    }
+  
+    > div {
+      
+      position: relative;
+      padding: 10px;
+      border-radius: 16px;
+      overflow: hidden;
+
+      &:last-of-type{
+        padding-top: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  
+    > div > img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      display: block;
+
+      
+    }
+  }
+  .discount{
+        position: absolute;
+        left: 10px;
+        bottom: 5px;
+}
+.price {
+  font-size: 25px;
+  color: rgb(81, 162, 142);
+}
+.necesitoestilos{
+  font-size: 18px;
+  color: #8484b1;
+  font-weight: bold;
+  
+}

@@ -28,7 +28,7 @@ export  function LoginForm() {
               
                
             } catch (error) {
-                console.log(error); 
+                throw error;
                 
             }
             

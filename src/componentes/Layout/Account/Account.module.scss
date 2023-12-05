@@ -28,7 +28,7 @@
     justify-content: center;
 
    >div{
-    background-color: $primary;
+    background-color: $segundo;
     color: $text-primary;
     font-size: 10px;
     margin-left: 5px;
@@ -37,12 +37,12 @@
  }
 
  .user {
-    background-color: $background-tertiary !important;
+    background-color: $primary !important;
     border-radius: 10px;
-    border: solid 2px $background-tertiary;
+    border: solid 2px #fedcba ;
 
     &:hover {
-        border: 2px solid $primary;
+        border: 2px solid red;
 
         i{
             color: $text-primary;

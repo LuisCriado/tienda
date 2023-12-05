@@ -12,17 +12,17 @@ export  function Footer() {
         <div className={styles.columns}>
             <div>
                  <Link href="/">
-                     <Image src="images/logo.png" size="medium" alt="NNinsumos"/>
+                     <Image src="/images/logo.png" size="medium" alt="NNinsumos"/>
                  
                  </Link>
             </div>
 
             <div>
                 <ul>
-                    <Link href="#"> terminos y condiciones </Link>
-                    <Link href="#"> politicas de privacidad </Link>
-                    <Link href="#"> contacto </Link>
-                    <Link href="#"> fAQS </Link>
+                    <Link href="#"> Terminos y Condiciones </Link>
+                    <Link href="#"> Politicas de Privacidad </Link>
+                    <Link href="#"> Contacto: 113917-7650 /1131868538 </Link>
+                    <Link href="#"> Direccion: : Carlos Antonio López 3672,  Devoto </Link>
                 </ul>
 
             </div>

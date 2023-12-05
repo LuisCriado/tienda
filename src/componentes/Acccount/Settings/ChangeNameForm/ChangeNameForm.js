@@ -23,8 +23,7 @@ export  function ChangeNameForm() {
       try {
 
         await userCtrl.updateMe(user.id,formValue)
-        console.log("Formulario enviado")
-        console.log(formValue)
+      
 
         
       } catch (error) {
