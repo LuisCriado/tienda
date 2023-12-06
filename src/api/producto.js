@@ -66,5 +66,51 @@ export class Producto {
             throw error;
         }
     }
+    async searchProducto (text, page){
+        try {
+            const filters = `filters[title][$contains]=${text}`
 
+            // creo que hay q arreglarlo
+            const pagination = `pagination[page]=${page}&pagination[pageSize]=40`
+            const populate = `populate=*` 
+            const urlParams = `${filters}&${pagination}&${populate}`
+
+            const url = `${ENV.API_URL.replace('localhost', '127.0.0.1')}/${ENV.ENDPOINTS.PRODUCTO}?${urlParams}`;
+
+            const response = await fetch(url);
+            const result = await response.json();
+
+
+
+            if(response.status !== 200) throw result;
+
+            return result;
+            
+            
+        } catch (error) {
+            throw error
+        }
+    }
+
+    async getBySlug (slug){
+        try {
+            const filter = `filters[slug][$eq]=${slug}`
+        const populateProducto="populate[0]=wallpaper&populate[1]=cover&populate[2]=screenshots&populate[3]=platform"
+        const populatePlatform=`populate[4]=platform.icon`;
+        const populates= `${populateProducto}&${populatePlatform}`
+
+
+         const url = `${ENV.API_URL.replace('localhost', '127.0.0.1')}/${ENV.ENDPOINTS.PRODUCTO}?${filter}&${populates}`;
+
+        const response = await fetch(url);
+        const result = await response.json();
+
+        if(response.status !== 200) throw result;   
+
+    return result.data[0];
+        } catch (error) {
+            throw error
+        }
+    
+    }
 }

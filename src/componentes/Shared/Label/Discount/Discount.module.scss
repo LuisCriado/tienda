@@ -2,7 +2,7 @@
 
 .labelDiscount{
     font-weight: 700;
-    background-color: $primary;
+    background-color: red;
     color: $text-primary;
     position: absolute;
     border-radius: 8px 8px 0;
@@ -16,7 +16,7 @@
         width: 100%;
         content: "";
         position: absolute;
-        background-color: $primary;
+        background-color:red;
         top: 0;
         bottom: 0;
         right: -4px;

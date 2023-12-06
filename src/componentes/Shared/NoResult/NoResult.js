@@ -5,7 +5,7 @@ export  function NoResult(props) {
     const {text} =props;
   return (
     <div className={styles.noResult}>
-        <p>{tet}</p>
+        <p>{text}</p>
 
     </div>
   )
